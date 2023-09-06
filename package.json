@@ -4,9 +4,9 @@
   "description": "Made with create-react-library",
   "author": "Balakrishna",
   "license": "",
-  "repository": "Balakrishna/demo",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
+  "repository": "",
+  "main": "example/node_modules/demo/dist/index.js",
+  "module": "example/node_modules/demo/dist/index.modern.js",
   "source": "src/index.js",
   "engines": {
     "node": ">=10"

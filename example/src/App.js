@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import TestAPIServices from './TestAPIServices';
+import { ErrorBoundary } from 'demo';
 
-import { ExampleComponent } from 'demo'
-import 'demo/dist/index.css'
-
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+const App =()=>{
+  const baseUrl = "https://jsonplaceholder.typicode.com"
+  
+  return (
+    <div>
+      <>
+        <ErrorBoundary>
+        <TestAPIServices baseUrl={baseUrl}/>
+        </ErrorBoundary>
+      </>
+    </div>
+  ); 
 }
-
-export default App
+export default App;
